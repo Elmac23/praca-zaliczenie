@@ -1,0 +1,39 @@
+.hero{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Cinzel Decorative';
+    user-select: none;
+    &__title{
+        font-size: 4rem;
+        color: var(--clr-white);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__text{
+        font-size: 1.5rem;
+        color: darken($white, 20);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__btn{
+        color: var(--clr-white);
+        border:2px solid var(--clr-white);
+        font-size: 1.5rem;
+        padding:0.25em 0.5em;
+        border-radius: 0.25em;
+        transition: all ease 200ms;
+    
+        &:hover{
+            background-color: var(--clr-white);
+            color: var(--clr-black);
+        }
+    }
+    
+}

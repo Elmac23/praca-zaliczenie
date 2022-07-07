@@ -1,0 +1,12 @@
+@mixin underline ($color: #fff, $height: 2px, $left:0, $right:0, $bottom:0){   
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: $bottom;
+        left:$left;
+        right:$right;
+        height: $height;
+        background-color: $color;
+    }
+
+}

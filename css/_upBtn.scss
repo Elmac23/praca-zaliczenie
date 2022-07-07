@@ -1,0 +1,37 @@
+.up-btn {
+  --size: 3;
+  position: fixed;
+  right: calc(var(--size) * 10px);
+  bottom: calc(var(--size) * 10px);
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--size) * 1rem);
+  height: calc(var(--size) * 1rem);
+  opacity: 1;
+  transition: bottom 300ms linear;
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-blue-light);
+  }
+  & > i {
+    display: block;
+    font-size: calc(var(--size) * 1rem);
+    transform: rotate(0);
+    transition: transform 300ms linear;
+  }
+
+  &--hidden {
+    bottom: -100px;
+    i {
+      transform: rotate(-180deg);
+    }
+  }
+  @media screen and (max-width: 500px) {
+    --size: 5;
+  }
+}

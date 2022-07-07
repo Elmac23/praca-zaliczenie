@@ -1,0 +1,57 @@
+$blueDark: hsla(229, 73%, 20%, 1);
+$blue: hsla(229, 73%, 40%, 1);
+$blueLight: hsla(229, 73%, 60%, 1);
+$gray: rgb(66, 66, 66);
+$darkGray: rgb(14, 14, 14);
+$black: rgb(8, 8, 8);
+$white: rgb(230, 230, 230);
+
+@import "_nav.scss";
+@import "_hero.scss";
+@import "_features.scss";
+@import "_footer.scss";
+@import "_upBtn.scss";
+@import "_scrollBar.scss";
+@import "_patchNotes.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-blue: #{$blue};
+  --clr-blue-light: #{$blueLight};
+  --clr-blue-dark: #{$blueDark};
+  --clr-white: #{$white};
+  --clr-black: #{$black};
+  --clr-gray: #{$gray};
+  --clr-gray-dark: #{$darkGray};
+}
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  @media screen and (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../img/bgXL.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
